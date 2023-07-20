@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Health Condition of Students of BMB,NSTU</title>
+</head>
+<body>
+    <h1>Health Condition of Student's of BMB,NSTU</h1>
+    <p>This is survey form for collecting data from the students of BMB at NSTU about their health condition. Please fill the required information and help us to conduct the survey.</p>
+    <form action="submit" href="www.submit.com">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="name">Name: <input id="name" type="text" name="name" required /> </label>
+            <label for="batch">Batch: <input id="batch" type="number" min="12" max="18" name="batch" /> </label>
+            <label for="ay">Academic Year:
+                <select id="ay">
+                    <option value="">(select)</option>
+                    <option value="1">1st</option>
+                    <option value="2">2nd</option>
+                    <option value="3">3rd</option>
+                    <option value="4">4th</option>
+                    
+                </select>
+            </label>
+            <label for="age">Age: <input id="age" type="number" min="18" max="27" /> </label>
+            <label for="place">Place of Residence: 
+                <select id="place">
+                    <option value="">(select)</option>
+                    <option value="1">Hall</option>
+                    <option value="2">Mess</option>
+                    <option value="3">With Family</option>
+                </select>
+             </label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Health Info</legend>
+            <label for="h8">Height: <input id="h8" type="text" name="height" required></label>
+            <label for="w8">Weight: <input id="w8" type="text" name="weight" required></label>
+            <label for="sbp">Systolic Blood Pressure: <input id="sbp" type="number" name="Systolic-BP" required></label>
+            <label for="dbp">Diastolic Blood Pressure: <input id="dbp" type="number" name="Diastolic-BP" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Information Privacy</legend>
+            <label for="private"><input id="private" type="radio" name="private-public" class="inline" /> Keep my infos private </label>
+            <label for="public"><input id="public" type="radio" name="private-public" class="inline"/> I don't mind if you use my infos in public </label>
+            <label for="t&c"><input id="t&c" type="checkbox" name="t&c" class="inline"/> I accept the <a href="www.facebook.com">terms and conditions. </a> </label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body> 
+</html>
